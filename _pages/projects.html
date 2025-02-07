@@ -1,0 +1,31 @@
+---
+layout: archive
+title: "🧠 Open MSc Projects"
+permalink: /projects/
+author_profile: true
+---
+<div class="container">
+  <h2>🧠 Open MSc Projects</h2>
+
+  <p>Here, you will find open MSc projects. You will typically encounter four different types of projects:</p>
+
+  <ul class="list-group">
+    <li class="list-group-item"><strong>Computational Neuroimaging</strong></li>
+    <li class="list-group-item"><strong>Neural Data Science</strong></li>
+    <li class="list-group-item"><strong>Deep Neural Network Models of the Brain</strong></li>
+    <li class="list-group-item"><strong>Biologically Inspired Deep [Reinforcement] Learning</strong></li>
+  </ul>
+
+  <p>If you're interested in working on any of these, feel free to reach out! We can also <strong>tailor projects</strong> according to your specific interests.</p>
+
+  <hr>
+
+  <h3>🔗 Open Project Descriptions</h3>
+  <ul class="list-group">
+    {% for project in site.projects %}
+      <li class="list-group-item">
+        <a href="{{ project.url }}">{{ project.title }}</a> – {{ project.venue }} ({{ project.date | date: "%Y-%m-%d" }})
+      </li>
+    {% endfor %}
+  </ul>
+</div>
